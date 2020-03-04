@@ -9,15 +9,15 @@
 [general]
 name=CQFS
 qgisMinimumVersion=2.0
-description=Criticidade à Queimadas em Faixas de Servidão
+description=Burning Criticality in Transmission Line Corridors
 version=0.1
-author=Geoambiente
-email=gisti@geoambiente.com.br
+author=Transmissora Aliança de Energia Eletrica S.A. – TAESA
+email=ped@taesa.com.br
 
-about=Essa pesquisa foi desenvolvida no âmbito do Programa de P&D da Agência Nacional de Energia Elétrica (ANEEL) e trata de "Estudo de Ações para Mitigação de Riscos de Desligamentos das Linhas de Transmissão por Queimadas e Avaliação de Métodos de Manutenção de Faixas de Servidão".
+about=This research was developed within the scope of the R&D Program of Brazilian Electricity Regulatory Agency (ANEEL) and deals with "Study of Actions for Mitigation of Risks of Shutdowns of Transmission Lines by Burns and Evaluation of Methods of Maintenance of Bonding Tracks". The metodology was developed in a transition area between Caatinga and Cerrado Biomes in Brazil, caracterized by a mixture of vegetation of theses two Biomes.
 
-tracker=suporte_projetos@geoambiente.atlassian.net
-repository=https://bitbucket.org/gisti/0023.2016_taesa
+tracker=https://github.com/taesa-tec/0044-CQFS/issues
+repository=https://github.com/taesa-tec/0044-CQFS
 # End of mandatory metadata
 
 # Recommended items:
@@ -26,14 +26,13 @@ repository=https://bitbucket.org/gisti/0023.2016_taesa
 # changelog=
 
 # Tags are comma separated with spaces allowed
-tags=cqfs anatel taesa geoambiente geo grid linha transmissao
+tags=cqfs anatel taesa geoambiente burning transmission line
 
-homepage=http://homepage
+homepage=https://github.com/taesa-tec/0044-CQFS
 category=Plugins
 icon=icon.png
 # experimental flag
-experimental=True
+experimental=False
 
 # deprecated flag (applies to the whole plugin, not just a single version)
 deprecated=False
-
