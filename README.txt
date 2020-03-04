@@ -1,32 +1,25 @@
-Plugin Builder Results
+CQFS - Burning Criticality in Transmission Line Corridors
 
-Your plugin CQFS was created in:
-    C:\Users\heitor.carneiro\.qgis2\python\plugins\CQFS
+About
+This research was developed within the scope of the R&D Program of Brazilian Electricity Regulatory Agency (ANEEL) and deals with "Study of Actions for Mitigation of Risks of Shutdowns of Transmission Lines by Burns and Evaluation of Methods of Maintenance of Bonding Tracks". The metodology was developed in a transition area between Caatinga and Cerrado Biomes in Brazil, caracterized by a mixture of vegetation of theses two Biomes.
 
-Your QGIS plugin directory is located at:
-    C:/Users/heitor.carneiro/.qgis2/python/plugins
+Author
+Transmissora Aliança de Energia Elétrica S.A. – TAESA
 
-What's Next:
+Author's email
+ped@taesa.com.br
 
-  * Copy the entire directory containing your new plugin to the QGIS plugin
-    directory
+Maintainer
+Geoambiente Sensoriamento Remoto Ltda
 
-  * Compile the resources file using pyrcc4
+Tags
+cqfs anatel taesa geoambiente burning transmission line
 
-  * Run the tests (``make test``)
+Plugin home page
+https://github.com/taesa-tec/0044-CQFS
 
-  * Test the plugin by enabling it in the QGIS plugin manager
+Tracker
+https://github.com/taesa-tec/0044-CQFS/issues
 
-  * Customize it by editing the implementation file: ``cqfs.py``
-
-  * Create your own custom icon, replacing the default icon.png
-
-  * Modify your user interface by opening CQFS.ui in Qt Designer
-
-  * You can use the Makefile to compile your Ui and resource files when
-    you make changes. This requires GNU make (gmake)
-
-For more information, see the PyQGIS Developer Cookbook at:
-http://www.qgis.org/pyqgis-cookbook/index.html
-
-(C) 2011-2018 GeoApt LLC - geoapt.com
+Code repository
+https://github.com/taesa-tec/0044-CQFS
