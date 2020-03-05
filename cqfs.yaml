@@ -1,0 +1,233 @@
+global:
+  crs_name: 'Albers_like_IBGE'
+  crs_proj4: '+proj=aea +lat_1=-2 +lat_2=-22 +lat_0=-12 +lon_0=-54 +x_0=0 +y_0=0 +ellps=GRS80 +towgs84=0,0,0,0,0,0,0 +units=m +no_defs'
+
+propagacao:
+  distance: 5000
+  expression: '(100 * "{v}") + (30 * "{s}")+ (10 * "{a}") + (5 * "{r}") + (2 * "{e}")'
+  expression_base_layer: 'v'
+  expression_default_band: 1
+  style:
+    linha_transmissao: 'LT.qml'
+    vegetacao: 'uso_solo.qml'
+    clinografia: 'clino.qml'
+    orientacao_vertente: 'aspect.qml'
+    proximidade_estradas: 'rodovia.qml'
+    hipsometria: 'hisometria.qml'
+    propagacao: 'propagacao.qml'
+  raster:
+    vegetacao:
+      units_per_pixel: 30
+      band_count: 1
+      minimum_value: -1
+      maximum_value: 66000
+      nodata: -9999
+    clinografia:
+      units_per_pixel: 30
+      band_count: 1
+      minimum_value: -1
+      maximum_value: 66000
+      nodata: -9999
+    orientacao_vertente:
+      units_per_pixel: 30
+      band_count: 1
+      minimum_value: -1
+      maximum_value: 66000
+      nodata: -9999
+    proximidade_estradas:
+      units_per_pixel: 30
+      band_count: 1
+      minimum_value: -1
+      maximum_value: 66000
+      nodata: -9999
+    hipsometria:
+      units_per_pixel: 30
+      band_count: 1
+      minimum_value: -1
+      maximum_value: 66000
+      nodata: -9999
+
+riscofogo:
+    expression: '("{v}" + "{s}") / 2'
+    expression_base_layer: 'v'
+    expression_default_band: 1
+    attr_equacao: 'equacao'
+    raster:
+        propagacao:
+          units_per_pixel: 30
+          band_count: 1
+          minimum_value: -1
+          maximum_value: 66000
+          nodata: -1.79769313486e+308
+
+ignicao:
+  distance: 5000
+  dissolve: true
+  segments: 5
+  grid_width: 500
+  grid_height: 500
+  grid_attributes: ['classe', 'cod_classe', 'queimada', 'queima', 'energia', 'enterra', 'altitude', 'insolacao', 'tmax', 'vven', 'lsat_gndvi', 'lsat_ndvi', 'ab_med', 'ab_dif', 'dens_med', 'vol_med']
+  grid_attributes_uso_solo: ['uso_c01_p', 'uso_c02_p', 'uso_c03_p', 'uso_c04_p', 'uso_c05_p', 'uso_c06_p', 'uso_c07_p', 'uso_c08_p', 'uso_c09_p', 'uso_c10_p', 'uso_c11_p', 'uso_c12_p', 'uso_c13_p', 'uso_c14_p', 'uso_c15_p', 'uso_c16_p', 'uso_c17_p', 'uso_c18_p', 'uso_c19_p', 'uso_c20_p', 'uso_c21_p', 'uso_c22_p']  
+  equation_field: 'Equacao'
+  raster:
+    insolacao:
+      units_per_pixel: 150
+      band_count: 1
+      minimum_value: -100
+      maximum_value: 66000
+      nodata: -9999
+    temperatura_maxima:
+      units_per_pixel: 150
+      band_count: 1
+      minimum_value: -100
+      maximum_value: 66000
+      nodata: -9999
+    velocidade_vento:
+      units_per_pixel: 150
+      band_count: 1
+      minimum_value: -100
+      maximum_value: 66000
+      nodata: -9999
+    gndvi:
+      units_per_pixel: 30
+      band_count: 1
+      minimum_value: -100
+      maximum_value: 66000
+      nodata: -9999
+    ndvi:
+      units_per_pixel: 30
+      band_count: 1
+      minimum_value: -100
+      maximum_value: 66000
+      nodata: -9999
+    area_basal:
+      units_per_pixel: 30
+      band_count: 1
+      minimum_value: -100
+      maximum_value: 66000
+      nodata: -9999
+    densidade:
+      units_per_pixel: 30
+      band_count: 1
+      minimum_value: -100
+      maximum_value: 66000
+      nodata: -9999
+    volume:
+      units_per_pixel: 30
+      band_count: 1
+      minimum_value: -100
+      maximum_value: 66000
+      nodata: -9999
+    altitude:
+      units_per_pixel: 30
+      band_count: 1
+      minimum_value: -100
+      maximum_value: 66000
+      nodata: -9999
+  fill_cell:
+    raster:
+      insolacao:
+        fields: ['INSOLACAO']
+        operations: ['mean']
+      temperatura_maxima:
+        fields: ['TMAX']
+        operations: ['mean']
+      velocidade_vento:
+        fields: ['VVEN']
+        operations: ['mean']
+      gndvi:
+        fields: ['LSAT_GNDVI']
+        operations: ['mean']
+      ndvi:
+        fields: ['LSAT_NDVI']
+        operations: ['mean']
+      area_basal:
+        fields: ['AB_MED', 'AB_DIF']
+        operations: ['mean', 'range']
+      densidade:
+        fields: ['DENS_MED']
+        operations: ['mean']
+      volume:
+        fields: ['VOL_MED']
+        operations: ['mean']
+      altitude:
+        fields: ['ALTITUDE']
+        operations: ['mean']
+    vector:
+      queimadas: 'QUEIMADA'
+      censo_ibge:
+        QUEIMA:
+          type: 'number'
+          alias: 'Queima_P'
+          field_to_check_null: True
+        ENTERRA:
+          type: 'number'
+          alias: 'Enterra_P'
+        ENERGIA:
+          type: 'number'
+          alias: 'Energia_P'
+      uso_solo:
+        COD_CLASSE:
+          type: 'number'
+          alias: 'codigo'
+          subcolumn: 'USO_C{}_P'
+        CLASSE:
+          type: 'string'
+          alias: 'Classe'
+          field_to_check_null: True
+
+vulnerabilidade:
+  distance: 90
+  dissolve: False
+  segments: 5
+  att_vao_id: 'nu_estrutu'
+  att_line_id: 'ID_PC'
+  att_alt_pc: 'Alt_PC'
+  att_alt_veg: 'Alt_veg'
+  att_pressao_atm: 'PressaoATM'
+  att_poder_calorifico: 'P_colorif'
+  att_dist_fases: 'Dist_fases'
+  att_grupo: 'grupo'
+  att_rup_ff: 'RUP_FF'
+  att_rup_ft: 'RUP_FT'
+  att_vul_ff: 'Vulner_FF'
+  att_vul_ft: 'Vulner_FT'
+  att_vulner: 'VULNERAB'
+  att_buffer_dist: 'B_DIST'
+  classif_alta: 'Alta'
+  classif_media: 'Media'
+  classif_baixa: 'Baixa'
+  output_type: 0
+  scale: 1
+  tolerance: -1
+  min_area: 0.0001
+  max_distance: '0.01'
+  straight_corners: True
+  caps_ends: True
+  attributes_vao: ['nu_estrutu', 'Dist_fases', 'Tensao', 'Alt_PC', 'Alt_veg', 'Cab_obstac', 'P_colorif', 'PressaoATM', 'R_inerente']
+  attributes_ponto_critico: ['ID_PC', 'Altura_PC']
+  attributes_torres: ['nu_estrutu', 'LONG', 'LAT']
+  style:
+    vulnerabilidade: 'vulnerabilidade'
+    criticidade: 'criticidade'
+    faixa_manutencao: 'faixamanutencao'
+
+criticidade:
+  att_cls_criticidade: 'Criticid'
+  att_criticidade: 'CRIT'
+  att_vulner: 'VULNERAB'
+  classif_muito_alta: 'Muito Alta'
+  classif_alta: 'Alta'
+  classif_media: 'Media'
+  classif_baixa: 'Baixa'
+  classif_muito_baixa: 'Muito Baixa'
+  attributes_vulnerabilidade: ['nu_estrutu', 'Dist_fases', 'Tensao', 'Alt_PC', 'Alt_veg', 'Cab_obstac', 'P_colorif', 'PressaoATM', 'R_inerente', 'VULNERAB', 'grupo', 'B_DIST']
+  raster:
+    risco_fogo:
+      units_per_pixel: 30
+      band_count: 1
+      minimum_value: -1
+      maximum_value: 66000
+      nodata: -9999
+  style:
+    criticidade: 'criticidade'

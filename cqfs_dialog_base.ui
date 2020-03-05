@@ -1,0 +1,1330 @@
+<?xml version="1.0" encoding="UTF-8"?>
+<ui version="4.0">
+ <class>CQFSDialogBase</class>
+ <widget class="QDialog" name="CQFSDialogBase">
+  <property name="geometry">
+   <rect>
+    <x>0</x>
+    <y>0</y>
+    <width>687</width>
+    <height>737</height>
+   </rect>
+  </property>
+  <property name="windowTitle">
+   <string>CQFS</string>
+  </property>
+  <property name="autoFillBackground">
+   <bool>false</bool>
+  </property>
+  <widget class="QWidget" name="main_widget" native="true">
+   <property name="geometry">
+    <rect>
+     <x>-1</x>
+     <y>-1</y>
+     <width>671</width>
+     <height>691</height>
+    </rect>
+   </property>
+   <widget class="QWidget" name="icon_widget" native="true">
+    <property name="geometry">
+     <rect>
+      <x>10</x>
+      <y>10</y>
+      <width>671</width>
+      <height>111</height>
+     </rect>
+    </property>
+    <widget class="QLabel" name="lbl_icon_anel">
+     <property name="geometry">
+      <rect>
+       <x>410</x>
+       <y>10</y>
+       <width>251</width>
+       <height>91</height>
+      </rect>
+     </property>
+     <property name="text">
+      <string/>
+     </property>
+     <property name="pixmap">
+      <pixmap resource="resources.qrc">:/plugins/CQFS/resources/logos/logo-ped-nova.png</pixmap>
+     </property>
+    </widget>
+    <widget class="QLabel" name="lbl_icon_cqfs_logo">
+     <property name="geometry">
+      <rect>
+       <x>0</x>
+       <y>10</y>
+       <width>81</width>
+       <height>81</height>
+      </rect>
+     </property>
+     <property name="text">
+      <string/>
+     </property>
+     <property name="pixmap">
+      <pixmap resource="resources.qrc">:/plugins/CQFS/resources/logos/logotipo-CQFS.png</pixmap>
+     </property>
+    </widget>
+    <widget class="QLabel" name="lbl_icon_cqfs_texto">
+     <property name="geometry">
+      <rect>
+       <x>90</x>
+       <y>10</y>
+       <width>311</width>
+       <height>81</height>
+      </rect>
+     </property>
+     <property name="text">
+      <string/>
+     </property>
+     <property name="pixmap">
+      <pixmap resource="resources.qrc">:/plugins/CQFS/resources/logos/logomarca-CQFS.png</pixmap>
+     </property>
+    </widget>
+   </widget>
+   <widget class="QWidget" name="plugin_widget" native="true">
+    <property name="geometry">
+     <rect>
+      <x>10</x>
+      <y>120</y>
+      <width>671</width>
+      <height>561</height>
+     </rect>
+    </property>
+    <widget class="QTabWidget" name="tab_widget">
+     <property name="geometry">
+      <rect>
+       <x>0</x>
+       <y>0</y>
+       <width>651</width>
+       <height>551</height>
+      </rect>
+     </property>
+     <property name="font">
+      <font>
+       <pointsize>10</pointsize>
+      </font>
+     </property>
+     <property name="autoFillBackground">
+      <bool>true</bool>
+     </property>
+     <property name="currentIndex">
+      <number>0</number>
+     </property>
+     <property name="iconSize">
+      <size>
+       <width>32</width>
+       <height>32</height>
+      </size>
+     </property>
+     <widget class="QWidget" name="tab_propagacao">
+      <property name="autoFillBackground">
+       <bool>true</bool>
+      </property>
+      <attribute name="icon">
+       <iconset resource="resources.qrc">
+        <normaloff>:/plugins/CQFS/resources/icons/propagacao_off.png</normaloff>:/plugins/CQFS/resources/icons/propagacao_off.png</iconset>
+      </attribute>
+      <attribute name="title">
+       <string>Propagação</string>
+      </attribute>
+      <widget class="QGroupBox" name="group_linha_transmissao">
+       <property name="geometry">
+        <rect>
+         <x>69</x>
+         <y>20</y>
+         <width>451</width>
+         <height>51</height>
+        </rect>
+       </property>
+       <property name="mouseTracking">
+        <bool>false</bool>
+       </property>
+       <property name="title">
+        <string>Linha de Transmissão</string>
+       </property>
+       <property name="flat">
+        <bool>true</bool>
+       </property>
+       <property name="checkable">
+        <bool>false</bool>
+       </property>
+       <property name="checked">
+        <bool>false</bool>
+       </property>
+       <widget class="QComboBox" name="combo_linha_transmissao">
+        <property name="geometry">
+         <rect>
+          <x>20</x>
+          <y>23</y>
+          <width>421</width>
+          <height>22</height>
+         </rect>
+        </property>
+       </widget>
+      </widget>
+      <widget class="QGroupBox" name="group_entradas_modelo">
+       <property name="geometry">
+        <rect>
+         <x>69</x>
+         <y>77</y>
+         <width>451</width>
+         <height>330</height>
+        </rect>
+       </property>
+       <property name="mouseTracking">
+        <bool>false</bool>
+       </property>
+       <property name="title">
+        <string>Entradas do modelo</string>
+       </property>
+       <property name="flat">
+        <bool>true</bool>
+       </property>
+       <property name="checkable">
+        <bool>false</bool>
+       </property>
+       <property name="checked">
+        <bool>false</bool>
+       </property>
+       <widget class="QWidget" name="vertical_layout_widget">
+        <property name="geometry">
+         <rect>
+          <x>20</x>
+          <y>19</y>
+          <width>421</width>
+          <height>305</height>
+         </rect>
+        </property>
+        <layout class="QVBoxLayout" name="vertical_layout_entradas_modelo">
+         <item>
+          <widget class="QLabel" name="lbl_vegetacao">
+           <property name="text">
+            <string>Vegetação</string>
+           </property>
+          </widget>
+         </item>
+         <item>
+          <widget class="QComboBox" name="combo_vegetacao"/>
+         </item>
+         <item>
+          <widget class="QLabel" name="lbl_clinografia">
+           <property name="text">
+            <string>Clinografia</string>
+           </property>
+          </widget>
+         </item>
+         <item>
+          <widget class="QComboBox" name="combo_clinografia"/>
+         </item>
+         <item>
+          <widget class="QLabel" name="lbl_orientacao_vertente">
+           <property name="text">
+            <string>Orientação da Vertente</string>
+           </property>
+          </widget>
+         </item>
+         <item>
+          <widget class="QComboBox" name="combo_orientacao_vertente"/>
+         </item>
+         <item>
+          <widget class="QLabel" name="lbl_proximidade_estradas">
+           <property name="text">
+            <string>Proximidade a Estradas</string>
+           </property>
+          </widget>
+         </item>
+         <item>
+          <widget class="QComboBox" name="combo_proximidade_estradas"/>
+         </item>
+         <item>
+          <widget class="QLabel" name="lbl_hipsometria">
+           <property name="text">
+            <string>Hipsometria</string>
+           </property>
+          </widget>
+         </item>
+         <item>
+          <widget class="QComboBox" name="combo_hipsometria"/>
+         </item>
+        </layout>
+       </widget>
+      </widget>
+      <widget class="QGroupBox" name="group_saida_modelo">
+       <property name="geometry">
+        <rect>
+         <x>69</x>
+         <y>417</y>
+         <width>451</width>
+         <height>80</height>
+        </rect>
+       </property>
+       <property name="mouseTracking">
+        <bool>false</bool>
+       </property>
+       <property name="title">
+        <string>Saída do modelo</string>
+       </property>
+       <property name="flat">
+        <bool>true</bool>
+       </property>
+       <property name="checkable">
+        <bool>false</bool>
+       </property>
+       <property name="checked">
+        <bool>false</bool>
+       </property>
+       <widget class="QWidget" name="vertical_layout_saida_modelo_geometry">
+        <property name="geometry">
+         <rect>
+          <x>20</x>
+          <y>20</y>
+          <width>421</width>
+          <height>61</height>
+         </rect>
+        </property>
+        <layout class="QVBoxLayout" name="vertical_layout_saida_modelo">
+         <property name="spacing">
+          <number>6</number>
+         </property>
+         <property name="sizeConstraint">
+          <enum>QLayout::SetFixedSize</enum>
+         </property>
+         <item>
+          <widget class="QLabel" name="lbl_raster_propagacao">
+           <property name="text">
+            <string>Raster de Propagação</string>
+           </property>
+          </widget>
+         </item>
+         <item>
+          <layout class="QHBoxLayout" name="horizontal_layout_saida_modelo">
+           <item>
+            <widget class="QLineEdit" name="line_saida_modelo">
+             <property name="enabled">
+              <bool>false</bool>
+             </property>
+             <property name="sizePolicy">
+              <sizepolicy hsizetype="Minimum" vsizetype="Fixed">
+               <horstretch>150</horstretch>
+               <verstretch>0</verstretch>
+              </sizepolicy>
+             </property>
+             <property name="minimumSize">
+              <size>
+               <width>240</width>
+               <height>0</height>
+              </size>
+             </property>
+            </widget>
+           </item>
+           <item>
+            <widget class="QPushButton" name="btn_saida_modelo">
+             <property name="sizePolicy">
+              <sizepolicy hsizetype="Fixed" vsizetype="Fixed">
+               <horstretch>0</horstretch>
+               <verstretch>0</verstretch>
+              </sizepolicy>
+             </property>
+             <property name="text">
+              <string>...</string>
+             </property>
+            </widget>
+           </item>
+          </layout>
+         </item>
+        </layout>
+       </widget>
+      </widget>
+      <zorder>group_entradas_modelo</zorder>
+      <zorder>group_linha_transmissao</zorder>
+      <zorder>group_saida_modelo</zorder>
+     </widget>
+     <widget class="QWidget" name="tab_ignicao">
+      <property name="autoFillBackground">
+       <bool>true</bool>
+      </property>
+      <attribute name="icon">
+       <iconset resource="resources.qrc">
+        <normaloff>:/plugins/CQFS/resources/icons/ignicao_off.png</normaloff>:/plugins/CQFS/resources/icons/ignicao_off.png</iconset>
+      </attribute>
+      <attribute name="title">
+       <string>Ignição</string>
+      </attribute>
+      <widget class="QScrollArea" name="scrollArea">
+       <property name="geometry">
+        <rect>
+         <x>-1</x>
+         <y>-1</y>
+         <width>601</width>
+         <height>510</height>
+        </rect>
+       </property>
+       <property name="minimumSize">
+        <size>
+         <width>0</width>
+         <height>510</height>
+        </size>
+       </property>
+       <property name="maximumSize">
+        <size>
+         <width>16777215</width>
+         <height>510</height>
+        </size>
+       </property>
+       <property name="autoFillBackground">
+        <bool>false</bool>
+       </property>
+       <property name="verticalScrollBarPolicy">
+        <enum>Qt::ScrollBarAlwaysOn</enum>
+       </property>
+       <property name="widgetResizable">
+        <bool>true</bool>
+       </property>
+       <widget class="QWidget" name="scrollAreaWidgetContents">
+        <property name="geometry">
+         <rect>
+          <x>0</x>
+          <y>0</y>
+          <width>582</width>
+          <height>1180</height>
+         </rect>
+        </property>
+        <property name="minimumSize">
+         <size>
+          <width>0</width>
+          <height>1180</height>
+         </size>
+        </property>
+        <property name="maximumSize">
+         <size>
+          <width>16777215</width>
+          <height>490</height>
+         </size>
+        </property>
+        <property name="autoFillBackground">
+         <bool>true</bool>
+        </property>
+        <widget class="QGroupBox" name="ignicao_group_entrada_modelo">
+         <property name="geometry">
+          <rect>
+           <x>70</x>
+           <y>20</y>
+           <width>421</width>
+           <height>61</height>
+          </rect>
+         </property>
+         <property name="mouseTracking">
+          <bool>false</bool>
+         </property>
+         <property name="title">
+          <string>Entrada</string>
+         </property>
+         <property name="flat">
+          <bool>true</bool>
+         </property>
+         <property name="checkable">
+          <bool>false</bool>
+         </property>
+         <property name="checked">
+          <bool>false</bool>
+         </property>
+         <widget class="QComboBox" name="ignicao_combo_lt">
+          <property name="geometry">
+           <rect>
+            <x>20</x>
+            <y>40</y>
+            <width>391</width>
+            <height>20</height>
+           </rect>
+          </property>
+         </widget>
+         <widget class="QCheckBox" name="ignicao_checkbox_lt">
+          <property name="geometry">
+           <rect>
+            <x>20</x>
+            <y>20</y>
+            <width>191</width>
+            <height>17</height>
+           </rect>
+          </property>
+          <property name="text">
+           <string>Linha de Transmissão</string>
+          </property>
+          <property name="checked">
+           <bool>true</bool>
+          </property>
+         </widget>
+        </widget>
+        <widget class="QGroupBox" name="ignicao_group_grid">
+         <property name="geometry">
+          <rect>
+           <x>70</x>
+           <y>90</y>
+           <width>421</width>
+           <height>71</height>
+          </rect>
+         </property>
+         <property name="title">
+          <string>GRID</string>
+         </property>
+         <property name="flat">
+          <bool>true</bool>
+         </property>
+         <widget class="QCheckBox" name="ignicao_checkbox_grid">
+          <property name="enabled">
+           <bool>true</bool>
+          </property>
+          <property name="geometry">
+           <rect>
+            <x>20</x>
+            <y>20</y>
+            <width>91</width>
+            <height>17</height>
+           </rect>
+          </property>
+          <property name="text">
+           <string>Ignição</string>
+          </property>
+          <property name="checked">
+           <bool>false</bool>
+          </property>
+         </widget>
+         <widget class="QComboBox" name="ignicao_combo_grid">
+          <property name="enabled">
+           <bool>true</bool>
+          </property>
+          <property name="geometry">
+           <rect>
+            <x>20</x>
+            <y>40</y>
+            <width>391</width>
+            <height>20</height>
+           </rect>
+          </property>
+         </widget>
+        </widget>
+        <widget class="QGroupBox" name="ignicao_group_entradas_modelo">
+         <property name="geometry">
+          <rect>
+           <x>70</x>
+           <y>190</y>
+           <width>421</width>
+           <height>771</height>
+          </rect>
+         </property>
+         <property name="mouseTracking">
+          <bool>false</bool>
+         </property>
+         <property name="title">
+          <string>Entradas do Modelo</string>
+         </property>
+         <property name="flat">
+          <bool>true</bool>
+         </property>
+         <property name="checkable">
+          <bool>false</bool>
+         </property>
+         <property name="checked">
+          <bool>false</bool>
+         </property>
+         <widget class="QWidget" name="verticalLayoutWidget_3">
+          <property name="geometry">
+           <rect>
+            <x>20</x>
+            <y>21</y>
+            <width>401</width>
+            <height>741</height>
+           </rect>
+          </property>
+          <layout class="QVBoxLayout" name="ignicao_vertical_layout">
+           <item>
+            <widget class="QLabel" name="ignicao_lbl_insolacao">
+             <property name="text">
+              <string>Insolação</string>
+             </property>
+            </widget>
+           </item>
+           <item>
+            <widget class="QComboBox" name="ignicao_combo_insolacao"/>
+           </item>
+           <item>
+            <widget class="QLabel" name="ignicao_lbl_temparatura_maxima">
+             <property name="text">
+              <string>Temperatura Máxima</string>
+             </property>
+            </widget>
+           </item>
+           <item>
+            <widget class="QComboBox" name="ignicao_combo_temperatura_maxima"/>
+           </item>
+           <item>
+            <widget class="QLabel" name="ignicao_lbl_velocidade_vento">
+             <property name="text">
+              <string>Velocidade média do Vento</string>
+             </property>
+            </widget>
+           </item>
+           <item>
+            <widget class="QComboBox" name="ignicao_combo_velocidade_vento"/>
+           </item>
+           <item>
+            <widget class="QLabel" name="ignicao_lbl_censo_ibge">
+             <property name="text">
+              <string>Censo IBGE</string>
+             </property>
+            </widget>
+           </item>
+           <item>
+            <widget class="QComboBox" name="ignicao_combo_censo_ibge"/>
+           </item>
+           <item>
+            <widget class="QLabel" name="ignicao_lbl_uso_solo">
+             <property name="text">
+              <string>Uso do Solo</string>
+             </property>
+            </widget>
+           </item>
+           <item>
+            <widget class="QComboBox" name="ignicao_combo_uso_solo"/>
+           </item>
+           <item>
+            <widget class="QLabel" name="ignicao_lbl_gndvi">
+             <property name="text">
+              <string>Índice de Vegetação por Diferença Normalizada Verde (GNDVI)</string>
+             </property>
+            </widget>
+           </item>
+           <item>
+            <widget class="QComboBox" name="ignicao_combo_gndvi"/>
+           </item>
+           <item>
+            <widget class="QLabel" name="ignicao_lbl_ndvi">
+             <property name="text">
+              <string>Índice de Vegetação (NVDI)</string>
+             </property>
+            </widget>
+           </item>
+           <item>
+            <widget class="QComboBox" name="ignicao_combo_ndvi"/>
+           </item>
+           <item>
+            <widget class="QLabel" name="ignicao_lbl_area_basal">
+             <property name="text">
+              <string>Área basal</string>
+             </property>
+            </widget>
+           </item>
+           <item>
+            <widget class="QComboBox" name="ignicao_combo_area_basal"/>
+           </item>
+           <item>
+            <widget class="QLabel" name="ignicao_lbl_densidade">
+             <property name="text">
+              <string>Densidade</string>
+             </property>
+            </widget>
+           </item>
+           <item>
+            <widget class="QComboBox" name="ignicao_combo_densidade"/>
+           </item>
+           <item>
+            <widget class="QLabel" name="ignicao_lbl_volume">
+             <property name="text">
+              <string>Volume</string>
+             </property>
+            </widget>
+           </item>
+           <item>
+            <widget class="QComboBox" name="ignicao_combo_volume"/>
+           </item>
+           <item>
+            <widget class="QLabel" name="ignicao_lbl_queimadas">
+             <property name="text">
+              <string>Queimadas</string>
+             </property>
+            </widget>
+           </item>
+           <item>
+            <widget class="QComboBox" name="ignicao_combo_queimadas"/>
+           </item>
+           <item>
+            <widget class="QLabel" name="ignicao_lbl_altitude">
+             <property name="text">
+              <string>Altitude</string>
+             </property>
+            </widget>
+           </item>
+           <item>
+            <widget class="QComboBox" name="ignicao_combo_altitude"/>
+           </item>
+          </layout>
+         </widget>
+        </widget>
+        <widget class="QGroupBox" name="ignicao_group_grid_saida">
+         <property name="geometry">
+          <rect>
+           <x>70</x>
+           <y>1090</y>
+           <width>421</width>
+           <height>81</height>
+          </rect>
+         </property>
+         <property name="mouseTracking">
+          <bool>false</bool>
+         </property>
+         <property name="title">
+          <string>Grid de Saída</string>
+         </property>
+         <property name="flat">
+          <bool>true</bool>
+         </property>
+         <property name="checkable">
+          <bool>false</bool>
+         </property>
+         <property name="checked">
+          <bool>false</bool>
+         </property>
+         <widget class="QWidget" name="vertical_layout_saida_modelo_geometry_2">
+          <property name="geometry">
+           <rect>
+            <x>20</x>
+            <y>20</y>
+            <width>391</width>
+            <height>61</height>
+           </rect>
+          </property>
+          <layout class="QVBoxLayout" name="ignicao_vertial_layout_group_saida_modelo">
+           <property name="spacing">
+            <number>6</number>
+           </property>
+           <property name="sizeConstraint">
+            <enum>QLayout::SetFixedSize</enum>
+           </property>
+           <item>
+            <widget class="QLabel" name="ignicao_lbl_saida_modelo">
+             <property name="text">
+              <string>GRID de Ignição</string>
+             </property>
+            </widget>
+           </item>
+           <item>
+            <layout class="QHBoxLayout" name="ignicao_horizontal_group_saida_modelo">
+             <item>
+              <widget class="QLineEdit" name="ignicao_line_saida_modelo">
+               <property name="enabled">
+                <bool>false</bool>
+               </property>
+               <property name="sizePolicy">
+                <sizepolicy hsizetype="Minimum" vsizetype="Fixed">
+                 <horstretch>150</horstretch>
+                 <verstretch>0</verstretch>
+                </sizepolicy>
+               </property>
+               <property name="minimumSize">
+                <size>
+                 <width>240</width>
+                 <height>0</height>
+                </size>
+               </property>
+              </widget>
+             </item>
+             <item>
+              <widget class="QPushButton" name="ignicao_btn_saida_modelo">
+               <property name="sizePolicy">
+                <sizepolicy hsizetype="Fixed" vsizetype="Fixed">
+                 <horstretch>0</horstretch>
+                 <verstretch>0</verstretch>
+                </sizepolicy>
+               </property>
+               <property name="text">
+                <string>...</string>
+               </property>
+              </widget>
+             </item>
+            </layout>
+           </item>
+          </layout>
+         </widget>
+        </widget>
+        <widget class="QGroupBox" name="ignicao_group_formula_saida">
+         <property name="geometry">
+          <rect>
+           <x>70</x>
+           <y>990</y>
+           <width>421</width>
+           <height>111</height>
+          </rect>
+         </property>
+         <property name="mouseTracking">
+          <bool>false</bool>
+         </property>
+         <property name="title">
+          <string>Fórmula</string>
+         </property>
+         <property name="flat">
+          <bool>true</bool>
+         </property>
+         <property name="checkable">
+          <bool>false</bool>
+         </property>
+         <property name="checked">
+          <bool>false</bool>
+         </property>
+         <widget class="QWidget" name="vertical_layout_saida_modelo_geometry_4">
+          <property name="geometry">
+           <rect>
+            <x>20</x>
+            <y>19</y>
+            <width>391</width>
+            <height>81</height>
+           </rect>
+          </property>
+          <layout class="QVBoxLayout" name="ignicao_vertial_layout_group_saida_modelo_3">
+           <property name="spacing">
+            <number>6</number>
+           </property>
+           <property name="sizeConstraint">
+            <enum>QLayout::SetFixedSize</enum>
+           </property>
+           <item>
+            <widget class="QLabel" name="ignicao_lbl_saida_modelo_3">
+             <property name="text">
+              <string>Arquivo com o Modelo</string>
+             </property>
+            </widget>
+           </item>
+           <item>
+            <layout class="QHBoxLayout" name="ignicao_horizontal_group_saida_modelo_3">
+             <item>
+              <widget class="QLineEdit" name="ignicao_line_entrada_formula">
+               <property name="enabled">
+                <bool>false</bool>
+               </property>
+               <property name="sizePolicy">
+                <sizepolicy hsizetype="Minimum" vsizetype="Fixed">
+                 <horstretch>150</horstretch>
+                 <verstretch>0</verstretch>
+                </sizepolicy>
+               </property>
+               <property name="minimumSize">
+                <size>
+                 <width>240</width>
+                 <height>0</height>
+                </size>
+               </property>
+              </widget>
+             </item>
+             <item>
+              <widget class="QPushButton" name="ignicao_btn_entrada_formula">
+               <property name="sizePolicy">
+                <sizepolicy hsizetype="Fixed" vsizetype="Fixed">
+                 <horstretch>0</horstretch>
+                 <verstretch>0</verstretch>
+                </sizepolicy>
+               </property>
+               <property name="text">
+                <string>...</string>
+               </property>
+              </widget>
+             </item>
+            </layout>
+           </item>
+          </layout>
+         </widget>
+        </widget>
+        <widget class="QCheckBox" name="ignicao_checkbox_habilitar_entradas">
+         <property name="geometry">
+          <rect>
+           <x>90</x>
+           <y>170</y>
+           <width>161</width>
+           <height>20</height>
+          </rect>
+         </property>
+         <property name="text">
+          <string>Habilitar Entradas</string>
+         </property>
+        </widget>
+        <widget class="QCheckBox" name="ignicao_checkbox_habilitar_formula">
+         <property name="geometry">
+          <rect>
+           <x>90</x>
+           <y>970</y>
+           <width>161</width>
+           <height>20</height>
+          </rect>
+         </property>
+         <property name="text">
+          <string>Habilitar Fórmula</string>
+         </property>
+        </widget>
+       </widget>
+      </widget>
+     </widget>
+     <widget class="QWidget" name="tab_risco_fogo">
+      <property name="autoFillBackground">
+       <bool>true</bool>
+      </property>
+      <attribute name="icon">
+       <iconset resource="resources.qrc">
+        <normaloff>:/plugins/CQFS/resources/icons/risco_off.png</normaloff>:/plugins/CQFS/resources/icons/risco_off.png</iconset>
+      </attribute>
+      <attribute name="title">
+       <string>Risco de Fogo</string>
+      </attribute>
+      <widget class="QGroupBox" name="grbEntradaRiscoFogo">
+       <property name="geometry">
+        <rect>
+         <x>40</x>
+         <y>20</y>
+         <width>521</width>
+         <height>151</height>
+        </rect>
+       </property>
+       <property name="title">
+        <string>Entrada</string>
+       </property>
+       <property name="flat">
+        <bool>true</bool>
+       </property>
+       <property name="checkable">
+        <bool>false</bool>
+       </property>
+       <widget class="QLabel" name="lbl_risco_fogo_raster_propagacao">
+        <property name="geometry">
+         <rect>
+          <x>20</x>
+          <y>20</y>
+          <width>429</width>
+          <height>35</height>
+         </rect>
+        </property>
+        <property name="text">
+         <string>Raster de Propagação</string>
+        </property>
+       </widget>
+       <widget class="QComboBox" name="combo_risco_fogo_raster_propagacao">
+        <property name="geometry">
+         <rect>
+          <x>20</x>
+          <y>50</y>
+          <width>429</width>
+          <height>27</height>
+         </rect>
+        </property>
+       </widget>
+       <widget class="QLabel" name="lbl_risco_fogo_grid_ignicao">
+        <property name="geometry">
+         <rect>
+          <x>20</x>
+          <y>90</y>
+          <width>429</width>
+          <height>35</height>
+         </rect>
+        </property>
+        <property name="text">
+         <string>GRID de Ignição</string>
+        </property>
+       </widget>
+       <widget class="QComboBox" name="combo_risco_fogo_grid_ignicao">
+        <property name="geometry">
+         <rect>
+          <x>20</x>
+          <y>120</y>
+          <width>429</width>
+          <height>27</height>
+         </rect>
+        </property>
+       </widget>
+      </widget>
+      <widget class="QGroupBox" name="grbSaidaRiscoFogo">
+       <property name="geometry">
+        <rect>
+         <x>40</x>
+         <y>190</y>
+         <width>521</width>
+         <height>141</height>
+        </rect>
+       </property>
+       <property name="title">
+        <string>Saida</string>
+       </property>
+       <property name="flat">
+        <bool>true</bool>
+       </property>
+       <widget class="QPushButton" name="btn_saida_risco_tecnico">
+        <property name="geometry">
+         <rect>
+          <x>360</x>
+          <y>50</y>
+          <width>93</width>
+          <height>30</height>
+         </rect>
+        </property>
+        <property name="text">
+         <string>...</string>
+        </property>
+       </widget>
+       <widget class="QLabel" name="lbl_risco_fogo_raster_risco_fogo">
+        <property name="geometry">
+         <rect>
+          <x>20</x>
+          <y>20</y>
+          <width>429</width>
+          <height>36</height>
+         </rect>
+        </property>
+        <property name="text">
+         <string>Raster de Risco de Fogo</string>
+        </property>
+       </widget>
+       <widget class="QLineEdit" name="line_saida_risco_tecnico">
+        <property name="enabled">
+         <bool>false</bool>
+        </property>
+        <property name="geometry">
+         <rect>
+          <x>20</x>
+          <y>50</y>
+          <width>327</width>
+          <height>27</height>
+         </rect>
+        </property>
+       </widget>
+      </widget>
+     </widget>
+     <widget class="QWidget" name="tab_vulnerabilidade">
+      <property name="enabled">
+       <bool>true</bool>
+      </property>
+      <property name="autoFillBackground">
+       <bool>true</bool>
+      </property>
+      <attribute name="icon">
+       <iconset resource="resources.qrc">
+        <normaloff>:/plugins/CQFS/resources/icons/vulnerabilidade_off.png</normaloff>:/plugins/CQFS/resources/icons/vulnerabilidade_off.png</iconset>
+      </attribute>
+      <attribute name="title">
+       <string>Vulnerabilidade</string>
+      </attribute>
+      <widget class="QLabel" name="lbl_entrada">
+       <property name="geometry">
+        <rect>
+         <x>50</x>
+         <y>30</y>
+         <width>61</width>
+         <height>16</height>
+        </rect>
+       </property>
+       <property name="text">
+        <string>Entrada</string>
+       </property>
+      </widget>
+      <widget class="Line" name="line_entrada">
+       <property name="geometry">
+        <rect>
+         <x>110</x>
+         <y>30</y>
+         <width>421</width>
+         <height>20</height>
+        </rect>
+       </property>
+       <property name="orientation">
+        <enum>Qt::Horizontal</enum>
+       </property>
+      </widget>
+      <widget class="QLabel" name="lbl_saida">
+       <property name="geometry">
+        <rect>
+         <x>60</x>
+         <y>240</y>
+         <width>46</width>
+         <height>13</height>
+        </rect>
+       </property>
+       <property name="text">
+        <string>Saída</string>
+       </property>
+      </widget>
+      <widget class="Line" name="line_saida">
+       <property name="geometry">
+        <rect>
+         <x>100</x>
+         <y>240</y>
+         <width>431</width>
+         <height>20</height>
+        </rect>
+       </property>
+       <property name="orientation">
+        <enum>Qt::Horizontal</enum>
+       </property>
+      </widget>
+      <widget class="QWidget" name="verticalLayoutWidget">
+       <property name="geometry">
+        <rect>
+         <x>100</x>
+         <y>50</y>
+         <width>431</width>
+         <height>181</height>
+        </rect>
+       </property>
+       <layout class="QVBoxLayout" name="vertical_layout_entrada">
+        <item>
+         <widget class="QLabel" name="lbl_torres">
+          <property name="text">
+           <string>Torres</string>
+          </property>
+         </widget>
+        </item>
+        <item>
+         <widget class="QComboBox" name="combo_torres"/>
+        </item>
+        <item>
+         <widget class="QLabel" name="lbl_vao">
+          <property name="text">
+           <string>Vão</string>
+          </property>
+         </widget>
+        </item>
+        <item>
+         <widget class="QComboBox" name="combo_vao"/>
+        </item>
+        <item>
+         <widget class="QLabel" name="lbl_ponto_critico">
+          <property name="text">
+           <string>Ponto Critico</string>
+          </property>
+         </widget>
+        </item>
+        <item>
+         <widget class="QComboBox" name="combo_ponto_critico"/>
+        </item>
+       </layout>
+      </widget>
+      <widget class="QWidget" name="verticalLayoutWidget_2">
+       <property name="geometry">
+        <rect>
+         <x>100</x>
+         <y>260</y>
+         <width>431</width>
+         <height>80</height>
+        </rect>
+       </property>
+       <layout class="QVBoxLayout" name="vertical_layout_saida">
+        <item>
+         <widget class="QLabel" name="lbl_vulnerabilidade">
+          <property name="text">
+           <string>Faixa de Manutenção</string>
+          </property>
+         </widget>
+        </item>
+        <item>
+         <layout class="QHBoxLayout" name="horizontal_layout_saida">
+          <item>
+           <widget class="QLineEdit" name="line_saida_vulnerabilidade">
+            <property name="enabled">
+             <bool>false</bool>
+            </property>
+           </widget>
+          </item>
+          <item>
+           <widget class="QPushButton" name="btn_saida_vulnerabilidade">
+            <property name="text">
+             <string>...</string>
+            </property>
+           </widget>
+          </item>
+         </layout>
+        </item>
+       </layout>
+      </widget>
+     </widget>
+     <widget class="QWidget" name="tab_criticidade">
+      <property name="autoFillBackground">
+       <bool>true</bool>
+      </property>
+      <attribute name="icon">
+       <iconset resource="resources.qrc">
+        <normaloff>:/plugins/CQFS/resources/icons/criticidade_off.png</normaloff>:/plugins/CQFS/resources/icons/criticidade_off.png</iconset>
+      </attribute>
+      <attribute name="title">
+       <string>Criticidade</string>
+      </attribute>
+      <widget class="QGroupBox" name="grbEntradaCriticidade">
+       <property name="geometry">
+        <rect>
+         <x>40</x>
+         <y>20</y>
+         <width>521</width>
+         <height>151</height>
+        </rect>
+       </property>
+       <property name="title">
+        <string>Entrada</string>
+       </property>
+       <property name="flat">
+        <bool>true</bool>
+       </property>
+       <property name="checkable">
+        <bool>false</bool>
+       </property>
+       <widget class="QLabel" name="lbl_vulnerabilidade_criticidade">
+        <property name="geometry">
+         <rect>
+          <x>20</x>
+          <y>20</y>
+          <width>429</width>
+          <height>35</height>
+         </rect>
+        </property>
+        <property name="text">
+         <string>Vulnerabilidade</string>
+        </property>
+       </widget>
+       <widget class="QComboBox" name="combo_vulnerabilidade">
+        <property name="geometry">
+         <rect>
+          <x>20</x>
+          <y>50</y>
+          <width>429</width>
+          <height>27</height>
+         </rect>
+        </property>
+       </widget>
+       <widget class="QLabel" name="lbl_risco_fogo_criticidade">
+        <property name="geometry">
+         <rect>
+          <x>10</x>
+          <y>90</y>
+          <width>429</width>
+          <height>35</height>
+         </rect>
+        </property>
+        <property name="text">
+         <string>Raster de Risco de Fogo</string>
+        </property>
+       </widget>
+       <widget class="QComboBox" name="combo_risco_fogo">
+        <property name="geometry">
+         <rect>
+          <x>20</x>
+          <y>120</y>
+          <width>429</width>
+          <height>27</height>
+         </rect>
+        </property>
+       </widget>
+      </widget>
+      <widget class="QGroupBox" name="grbSaidaCriticidade">
+       <property name="geometry">
+        <rect>
+         <x>40</x>
+         <y>190</y>
+         <width>521</width>
+         <height>141</height>
+        </rect>
+       </property>
+       <property name="title">
+        <string>Saida</string>
+       </property>
+       <property name="flat">
+        <bool>true</bool>
+       </property>
+       <widget class="QPushButton" name="btn_saida_criticidade">
+        <property name="geometry">
+         <rect>
+          <x>360</x>
+          <y>50</y>
+          <width>93</width>
+          <height>30</height>
+         </rect>
+        </property>
+        <property name="text">
+         <string>...</string>
+        </property>
+       </widget>
+       <widget class="QLabel" name="lbl_criticidade">
+        <property name="geometry">
+         <rect>
+          <x>20</x>
+          <y>20</y>
+          <width>429</width>
+          <height>36</height>
+         </rect>
+        </property>
+        <property name="text">
+         <string>Criticidade</string>
+        </property>
+       </widget>
+       <widget class="QLineEdit" name="line_saida_criticidade">
+        <property name="enabled">
+         <bool>false</bool>
+        </property>
+        <property name="geometry">
+         <rect>
+          <x>20</x>
+          <y>50</y>
+          <width>327</width>
+          <height>27</height>
+         </rect>
+        </property>
+       </widget>
+      </widget>
+     </widget>
+    </widget>
+   </widget>
+  </widget>
+  <widget class="QDialogButtonBox" name="btn_ok">
+   <property name="geometry">
+    <rect>
+     <x>450</x>
+     <y>700</y>
+     <width>191</width>
+     <height>30</height>
+    </rect>
+   </property>
+   <property name="orientation">
+    <enum>Qt::Horizontal</enum>
+   </property>
+   <property name="standardButtons">
+    <set>QDialogButtonBox::Cancel|QDialogButtonBox::Ok</set>
+   </property>
+  </widget>
+ </widget>
+ <connections>
+  <connection>
+   <sender>btn_ok</sender>
+   <signal>accepted()</signal>
+   <receiver>CQFSDialogBase</receiver>
+   <slot>accept()</slot>
+   <hints>
+    <hint type="sourcelabel">
+     <x>20</x>
+     <y>20</y>
+    </hint>
+    <hint type="destinationlabel">
+     <x>20</x>
+     <y>20</y>
+    </hint>
+   </hints>
+  </connection>
+  <connection>
+   <sender>btn_ok</sender>
+   <signal>rejected()</signal>
+   <receiver>CQFSDialogBase</receiver>
+   <slot>reject()</slot>
+   <hints>
+    <hint type="sourcelabel">
+     <x>20</x>
+     <y>20</y>
+    </hint>
+    <hint type="destinationlabel">
+     <x>20</x>
+     <y>20</y>
+    </hint>
+   </hints>
+  </connection>
+ </connections>
+</ui>

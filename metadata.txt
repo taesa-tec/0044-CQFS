@@ -1,0 +1,39 @@
+# This file contains metadata for your plugin. Since 
+# version 2.0 of QGIS this is the proper way to supply 
+# information about a plugin. The old method of 
+# embedding metadata in __init__.py will 
+# is no longer supported since version 2.0.
+
+# This file should be included when you package your plugin.# Mandatory items:
+
+[general]
+name=CQFS
+qgisMinimumVersion=2.0
+description=Criticidade à Queimadas em Faixas de Servidão
+version=0.1
+author=Geoambiente
+email=gisti@geoambiente.com.br
+
+about=Essa pesquisa foi desenvolvida no âmbito do Programa de P&D da Agência Nacional de Energia Elétrica (ANEEL) e trata de "Estudo de Ações para Mitigação de Riscos de Desligamentos das Linhas de Transmissão por Queimadas e Avaliação de Métodos de Manutenção de Faixas de Servidão".
+
+tracker=suporte_projetos@geoambiente.atlassian.net
+repository=https://bitbucket.org/gisti/0023.2016_taesa
+# End of mandatory metadata
+
+# Recommended items:
+
+# Uncomment the following line and add your changelog:
+# changelog=
+
+# Tags are comma separated with spaces allowed
+tags=cqfs anatel taesa geoambiente geo grid linha transmissao
+
+homepage=http://homepage
+category=Plugins
+icon=icon.png
+# experimental flag
+experimental=True
+
+# deprecated flag (applies to the whole plugin, not just a single version)
+deprecated=False
+

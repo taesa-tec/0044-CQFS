@@ -1,0 +1,24 @@
+<RCC>
+  <qresource prefix="/plugins/CQFS">
+    <file>resources/logos/logo-ped-nova.png</file>
+    <file>resources/logos/logo-ped-nova.jpg</file>
+    <file>resources/logos/logo-pee-nova.jpg</file>
+    <file>resources/icons/criticidade_off.png</file>
+    <file>resources/icons/criticidade_on.png</file>
+    <file>resources/icons/ignicao_off.png</file>
+    <file>resources/icons/ignicao_on.png</file>
+    <file>resources/icons/propagacao_off.png</file>
+    <file>resources/icons/propagacao_on.png</file>
+    <file>resources/icons/risco_off.png</file>
+    <file>resources/icons/risco_on.png</file>
+    <file>resources/icons/vulnerabilidade_off.png</file>
+    <file>resources/icons/vulnerabilidade_on.png</file>
+    <file>resources/logos/aneel.png</file>
+    <file>resources/logos/icon.png</file>
+    <file>resources/logos/logomarca-CQFS.png</file>
+    <file>resources/logos/logotipo+logomarca-CQFS.png</file>
+    <file>resources/logos/logotipo-CQFS.png</file>
+    <file>resources/logos/taesa.png</file>
+    <file>icon.png</file>
+  </qresource>
+</RCC>
