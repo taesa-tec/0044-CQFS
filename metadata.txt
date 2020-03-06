@@ -10,7 +10,7 @@
 name=CQFS
 qgisMinimumVersion=2.0
 description=Burning Criticality in Transmission Line Corridors
-version=0.1
+version=0.3
 author=Transmissora Aliança de Energia Eletrica S.A. – TAESA
 email=ped@taesa.com.br
 

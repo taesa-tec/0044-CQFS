@@ -80,8 +80,8 @@ def calc(plugin_name, progress, layer):
         dist_fases = feature[params['att_dist_fases']]
         tensao_ruptura_ff = calc_tensao_ruptura_ff(pressao_atm, dist_fases, gap)
 
-        layer.changeAttributeValue(feature.id(), layer.fieldNameIndex(params['att_rup_ff']), tensao_ruptura_ff)
-        layer.changeAttributeValue(feature.id(), layer.fieldNameIndex(params['att_rup_ft']), tensao_ruptura_ft)
+        layer.changeAttributeValue(feature.id(), layer.fieldNameIndex(params['att_rup_ff']), tensao_ruptura_ft)
+        layer.changeAttributeValue(feature.id(), layer.fieldNameIndex(params['att_rup_ft']), tensao_ruptura_ff)
 
         vulner_FF = classificacao_ff(tensao_ruptura_ff, plugin_name)
         vulner_FT = classificacao_ft(tensao_ruptura_ft, plugin_name)
