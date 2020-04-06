@@ -211,32 +211,7 @@ Figura 29 – Exemplo de dado de estação meteorológica
 
 Tabela 19 – Legenda de uso do solo e cobertura vegetal
 
-| **Código** | **Formação**                              | **Classe**                  |
-| ---------- | ----------------------------------------- | --------------------------- |
-| **1**      | **Cerrado (Savana)**                      | Vereda                      |
-| **2**      | Florestado                                |                             |
-| **3**      | Arborizado                                |                             |
-| **4**      | Parque                                    |                             |
-| **5**      | Gramíneo-Lenhosa                          |                             |
-| **6**      | **Caatinga (Savana Estépica)**            | Florestada                  |
-| **7**      | Arborizada                                |                             |
-| **8**      | Parque - seco                             |                             |
-| **9**      | Parque - alagável                         |                             |
-| **10**     | Gramíneo-Lenhosa                          |                             |
-| **11**     | **Floresta Estacional**                   | Semidecidual                |
-| **12**     | Decidual                                  |                             |
-| **13**     | **Antropizados**                          | Áreas urbanas sem vegetação |
-| **14**     | Áreas verdes em áreas urbanas             |                             |
-| **15**     | Culturas permanentes                      |                             |
-| **16**     | Culturas temporárias                      |                             |
-| **17**     | Pasto                                     |                             |
-| **18**     | Capoeira                                  |                             |
-| **19**     | **Outros**                                | Corpos d'água               |
-| **20**     | Área úmida sem vegetação natural aquática |                             |
-| **21**     | Área úmida com vegetação herbácea         |                             |
-| **22**     | Mata ripária                              |                             |
-
- 
+ ![Tabela 19](Figuras_Manual/Tabela_19.png)
 
 3. Reprojetar para Albers;
 
