@@ -2,13 +2,13 @@
 
  O plugin pode ser acessado no QGIS através do menu de Complementos (Figura 5) ou diretamente pelo ícone do plugin na barra de ferramentas (Figura 6).
 
-![Menu de acesso ao plugin](Figuras_Manual/Figura_5.png)                                     
+![Menu de acesso ao plugin](Figuras_Manual/Figura_5.PNG)                                     
 
 Figura 5 – Menu de acesso ao plugin
 
 
 
-![Ícone de acesso ao plugin](Figuras_Manual/Figura_6.png)       
+![Ícone de acesso ao plugin](Figuras_Manual/Figura_6.PNG)       
 
 Figura 6 – Ícone de acesso ao plugin
 
@@ -16,7 +16,7 @@ Figura 6 – Ícone de acesso ao plugin
 
 A Figura 7 apresenta a interface principal do plugin; as ferramentas que representam cada modelo foram organizadas em abas. Assim, para acessar a ferramenta desejada o usuário deverá selecionar a aba correspondente.
 
-![Interface principal CQFS](Figuras_Manual/Figura_7.png)       
+![Interface principal CQFS](Figuras_Manual/Figura_7.PNG)       
 
 Figura 7 – Interface principal CQFS
 
@@ -50,7 +50,7 @@ Destaca-se que a nomenclatura de pastas utilizada pelo usuário para armazenar o
 
 A Figura 8 mostra a interface da ferramenta de **Propagação**.
 
-![Interface de Propagação](Figuras_Manual/Figura_8.png)     
+![Interface de Propagação](Figuras_Manual/Figura_8.PNG)     
 
 Figura 8 – Interface de Propagação
 
@@ -70,7 +70,7 @@ Para a execução da ferramenta o usuário deverá inicialmente adicionar no QGI
 
 Após inserir todas as camadas (vetorial e raster), o usuário deve verificar uma a uma se o sistema de coordenadas está correto. Conforme citado anteriormente, o sistema de coordenadas determinado foi Albers_SIRGAS200_Like_IBGE (parâmetros proj4 são mostrados na Tabela 17). Quando alguma camada não estiver no sistema de coordenada correto, irá aparecer uma mensagem de erro na parte superior do QGIS, conforme indicado na Figura 9.
 
-![Mensagem de erro quando o sistema de coordenadas não está correto](Figuras_Manual/Figura_9.png)             
+![Mensagem de erro quando o sistema de coordenadas não está correto](Figuras_Manual/Figura_9.PNG)             
 
 Figura 9 – Mensagem de erro quando o sistema de coordenadas não está correto.
 
@@ -80,7 +80,7 @@ O usuário também deverá indicar um local e arquivo no computador local para q
 
 Durante a execução da ferramenta, a tela indicada na Figura 10 irá aparecer. Nesse momento, o usuário deverá verificar se o sistema de coordenadas informado está correto e clicar em ok.
 
-![Tela durante o processo de execução](Figuras_Manual/Figura_10.png) 
+![Tela durante o processo de execução](Figuras_Manual/Figura_10.PNG) 
 
 Figura 10 – Tela durante o processo de execução.
 
@@ -90,11 +90,11 @@ Nas figuras abaixo (Figura 11 e Figura 12) demonstramos o resultado da execuçã
 
  
 
-![Resultado da ferramenta de Propagação (1)](Figuras_Manual/Figura_11.png)     
+![Resultado da ferramenta de Propagação (1)](Figuras_Manual/Figura_11.PNG)     
 
 Figura 11 – Resultado da ferramenta de Propagação (1)
 
-![Resultado da ferramenta de Propagação (2)](Figuras_Manual/Figura_12.png)     
+![Resultado da ferramenta de Propagação (2)](Figuras_Manual/Figura_12.PNG)     
 
 Figura 12 – Resultado da ferramenta de Propagação (2)
 
@@ -104,13 +104,13 @@ Figura 12 – Resultado da ferramenta de Propagação (2)
 
  A Figura 13 e a Figura 14 mostram a interface da ferramenta de **Ignição**.
 
-![Interface de Ignição – parte A ](Figuras_Manual/Figura_13.png)    
+![Interface de Ignição – parte A ](Figuras_Manual/Figura_13.PNG)    
 
 Figura 13 – Interface de Ignição – parte A 
 
 
 
-![Interface de Ignição – parte B ](Figuras_Manual/Figura_14.png)        
+![Interface de Ignição – parte B ](Figuras_Manual/Figura_14.PNG)        
 
 Figura 14 – Interface de Ignição – parte B
 
@@ -120,19 +120,19 @@ Para o usuário gerar o GRID de Ignição, ele deve selecionar a Linha de Transm
 
  
 
-![Dado de entrada para geração de GRID (1)](Figuras_Manual/Figura_15.png)           
+![Dado de entrada para geração de GRID (1)](Figuras_Manual/Figura_15.PNG)           
 
 Figura 15 – Dado de entrada para geração de GRID (1). 
 
 
 
-![Dado de entrada para geração de GRID (2)](Figuras_Manual/Figura_16.png)         
+![Dado de entrada para geração de GRID (2)](Figuras_Manual/Figura_16.PNG)         
 
 Figura 16 – Dado de saída para geração de GRID (2).
 
 
 
-![GRID de ignição gerado](Figuras_Manual/Figura_17.png)      
+![GRID de ignição gerado](Figuras_Manual/Figura_17.PNG)      
 
 Figura 17 - GRID de ignição gerado.
 
@@ -172,7 +172,7 @@ Após inserir todas as camadas (vetorial e raster), o usuário deve verificar um
 
 Para a execução a ferramenta de ignição, o usuário deve informar nesse momento o GRID de Ignição, selecionar a opção “**Habilitar Entradas”**, indicar quais as entradas que deseja preencher no GRID (Figura 18), em seguida clicar em OK.
 
-![Etapa para preenchimento do GRID](Figuras_Manual/Figura_18.png)                
+![Etapa para preenchimento do GRID](Figuras_Manual/Figura_18.PNG)                
 
 Figura 18 – Etapa para preenchimento do GRID. 
 
@@ -180,11 +180,11 @@ Figura 18 – Etapa para preenchimento do GRID.
 
 Para aplicar o modelo (terceiro passo da ferramenta de ignição), o usuário deve informar novamente o GRID de Ignição, depois selecionar a opção “**Habilitar Fórmula”** e então informar o arquivo da fórmula do modelo a ser aplicada (selecionar o arquivo *weight.yaml* na pasta do CQFS) (Figura 19 e Figura 20).
 
-![Etapa para aplicação do modelo (1)](Figuras_Manual/Figura_19.png)       
+![Etapa para aplicação do modelo (1)](Figuras_Manual/Figura_19.PNG)       
 
 Figura 19 – Etapa para aplicação do modelo (1). 
 
-![Etapa para aplicação do modelo (2)](Figuras_Manual/Figura_20.png)         
+![Etapa para aplicação do modelo (2)](Figuras_Manual/Figura_20.PNG)         
 
 Figura 20 – Etapa para aplicação do modelo (2). 
 
@@ -192,7 +192,7 @@ Figura 20 – Etapa para aplicação do modelo (2).
 
 Na Figura 21 demonstramos o resultado da execução da ferramenta.
 
-![Resultado da ferramenta de Ignição](Figuras_Manual/Figura_21.png)     
+![Resultado da ferramenta de Ignição](Figuras_Manual/Figura_21.PNG)     
 
 Figura 21 – Resultado da ferramenta de Ignição
 
@@ -202,7 +202,7 @@ Figura 21 – Resultado da ferramenta de Ignição
 
 A Figura 22 mostra a interface da ferramenta de **Risco de Fogo**.
 
-![Interface de Risco de Fogo](Figuras_Manual/Figura_22.png)      
+![Interface de Risco de Fogo](Figuras_Manual/Figura_22.PNG)      
 
 Figura 22 – Interface de Risco de Fogo
 
@@ -212,7 +212,7 @@ Para a execução da ferramenta o usuário deverá indicar como entradas a camad
 
 A Figura 23 é demonstrado o resultado da execução da ferramenta de Risco de Fogo.
 
-![Resultado da ferramenta de Risco de Fogo](Figuras_Manual/Figura_23.png)     
+![Resultado da ferramenta de Risco de Fogo](Figuras_Manual/Figura_23.PNG)     
 
 Figura 23 – Resultado da ferramenta de Risco de Fogo
 
@@ -222,7 +222,7 @@ Figura 23 – Resultado da ferramenta de Risco de Fogo
 
 A Figura 24 mostra a interface da ferramenta de **Vulnerabilidade**.
 
-![Interface de Vulnerabilidade](Figuras_Manual/Figura_24.png)     
+![Interface de Vulnerabilidade](Figuras_Manual/Figura_24.PNG)     
 
 Figura 24 – Interface de Vulnerabilidade
 
@@ -236,7 +236,7 @@ Após inserir todas as camadas, o usuário deve verificar uma a uma se o sistema
 
 Durante a execução da ferramenta, a tela indicada na Figura 25 irá aparecer novamente. Nesse momento, o usuário deverá verificar se o sistema de coordenadas informado está correto e clicar em ok.
 
-![Tela durante o processo de execução](Figuras_Manual/Figura_25.png)      
+![Tela durante o processo de execução](Figuras_Manual/Figura_25.PNG)      
 
 Figura 25 – Tela durante o processo de execução.
 
@@ -244,7 +244,7 @@ Figura 25 – Tela durante o processo de execução.
 
 A Figura 26 está demonstrado o resultado da execução da ferramenta de Vulnerabilidade.
 
-![Resultado da ferramenta de Vulnerabilidade](Figuras_Manual/Figura_26.png)      
+![Resultado da ferramenta de Vulnerabilidade](Figuras_Manual/Figura_26.PNG)      
 
 Figura 26 – Resultado da ferramenta de Vulnerabilidade
 
@@ -260,7 +260,7 @@ Através da definição da área ideal de manutenção é possível identificar 
 
 A Figura 27 mostra a interface da ferramenta de **Criticidade**.
 
-![Interface de Criticidade](Figuras_Manual/Figura_27.png)     
+![Interface de Criticidade](Figuras_Manual/Figura_27.PNG)     
 
 Figura 27 – Interface de Criticidade
 
@@ -272,7 +272,7 @@ Após inserir todas as camadas, o usuário deve verificar uma a uma se o sistema
 
 A Figura 28 demonstra o resultado da execução da ferramenta de **Criticidade**.
 
-![Resultado da ferramenta de Criticidade](Figuras_Manual/Figura_28.png) 
+![Resultado da ferramenta de Criticidade](Figuras_Manual/Figura_28.PNG) 
 
 Figura 28 – Resultado da ferramenta de Criticidade
 
