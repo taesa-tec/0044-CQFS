@@ -10,7 +10,7 @@ Para o modelo aplicado na ATE II foram duas formas de utilização dos dados de 
 
 Tabela 1: Classes de hipsometria
 
-![Tabela 1](Figuras_Manual/Tabela_1.PNG)
+![Tabela 1](Figuras_Manual/manual_tabela_1.png)
 
 
 A Clinografia se refere às diferentes declividades e aclividades do terreno, sendo possível obter essa informação em porcentagem ou em graus. Nos dados SRTM, se refere ao valor clinográfico predominante em uma célula de 30 por 30 metros.
@@ -21,7 +21,7 @@ Para o modelo aplicado na área da ATE II, as classes em graus em valores absolu
 
 Tabela 2: Classes clinográficas
 
-![Tabela 2](Figuras_Manual/Tabela_2.PNG)
+![Tabela 2](Figuras_Manual/manual_tabela_2.png)
 
 
 A orientação de vertentes é a informação que demonstra o ângulo azimutal da maior inclinação do terreno no sentindo descendente, expressa em graus de 0° a 360º. Ela define a orientação de vertente predominante na célula do SRTM em graus que variam de -1 (plano) e de 0 a 360º.
@@ -32,13 +32,13 @@ Cada faixa de graus pode ser associada a pontos cardeais e colaterais sendo 0°/
 
 Tabela 3: Classes de orientação das vertentes
 
-![Tabela 3](Figuras_Manual/Tabela_3.PNG)
+![Tabela 3](Figuras_Manual/manual_tabela_3.png)
 
 
 
 Tabela 4: Quadro resumo – dados topográficos
 
-![Tabela 4](Figuras_Manual/Tabela_4.PNG)
+![Tabela 4](Figuras_Manual/manual_tabela_4.png)
 
 
 
@@ -50,7 +50,7 @@ A variável de proximidade a rodovias tenta estabelecer uma relação entre o ac
 
 Tabela 5: Quadro resumo – Estradas e Rodovias
 
-![Tabela 5](Figuras_Manual/Tabela_5.PNG)
+![Tabela 5](Figuras_Manual/manual_tabela_5.png)
 
 ## *3.3. Dados da estrutura*
 
@@ -62,15 +62,15 @@ As informações de altura média e tipo da vegetação devem estar inseridas na
 
 Tabela 6: Tabela de atributos das Torres
 
-![Tabela 6](Figuras_Manual/Tabela_6.PNG)
+![Tabela 6](Figuras_Manual/manual_tabela_6.png)
 
 Tabela 7: Tabela de atributos dos Pontos Críticos (PC)
 
-![Tabela 7](Figuras_Manual/Tabela_7.PNG)
+![Tabela 7](Figuras_Manual/manual_tabela_7.png)
 
 Tabela 8: Tabela de atributos dos vãos (faixa de servidão)
 
-![Tabela 8](Figuras_Manual/Tabela_8.PNG)
+![Tabela 8](Figuras_Manual/manual_tabela_8.png)
 
 Para estabelecer o risco inerente da LT, foi utilizada a Tabela 9:
 
@@ -78,11 +78,11 @@ Para estabelecer o risco inerente da LT, foi utilizada a Tabela 9:
 
 Tabela 9: Risco inerente das LTs a desligamentos por queimadas.
 
-![Tabela 9](Figuras_Manual/Tabela_9.PNG)
+![Tabela 9](Figuras_Manual/manual_tabela_9.png)
 
 Tabela 10: Quadro resumo – Estrutura (linha de transmissão)
 
-![Tabela 10](Figuras_Manual/Tabela_10.PNG)
+![Tabela 10](Figuras_Manual/manual_tabela_10.png)
 
 ## *3.4. Dados climáticos*
 
@@ -98,7 +98,7 @@ Com as estações selecionadas, o usuário deve baixar os dados de *insolação*
 
 Tabela 11: Quadro resumo – Dados climáticos
 
-![Tabela 11](Figuras_Manual/Tabela_11.PNG)
+![Tabela 11](Figuras_Manual/manual_tabela_11.png)
 
 
 ## *3.5. Dados demográficos*
@@ -109,7 +109,7 @@ As variáveis referentes aos aspectos socioeconômicos foram extraídas a partir
 
 Tabela 12: Quadro resumo – Dados demográficos
 
-![Tabela 12](Figuras_Manual/Tabela_12.PNG)
+![Tabela 12](Figuras_Manual/manual_tabela_12.png)
 
 
 ## *3.6.  Dados de uso do solo e cobertura vegetal*
@@ -120,12 +120,12 @@ O mapeamento de uso e cobertura do solo na área de análise foi realizado a par
 
 Tabela 13: Legenda do mapeamento de uso do solo e cobertura vegetal
 
-![Tabela 13](Figuras_Manual/Tabela_13.PNG)
+![Tabela 13](Figuras_Manual/manual_tabela_13.png)
 
 
 Tabela 14: Quadro resumo – Uso do solo e cobertura vegetal
 
-![Tabela 14](Figuras_Manual/Tabela_14.PNG)
+![Tabela 14](Figuras_Manual/manual_tabela_14.png)
 
 Dados da vegetação e sua estrutura, estimados por Sensoriamento Remoto, como tipo de vegetação, densidade, área basal e volume também suportam os modelos de comportamento do fogo florestal ou de risco ao fogo (ANDERSEN et al., 2005; CARAPIÁ, 2006; MORSDORF et al., 2004).
 
@@ -133,7 +133,7 @@ Além dessas variáveis, para caracterizar a cobertura vegetal o modelo também 
 
 
 
-![Equação 1](Figuras_Manual/GNDVI.PNG)
+![Equação 1](Figuras_Manual/manual_gndvi.png)
 
 Equação 1
 
@@ -147,7 +147,7 @@ Para geração de todos os insumos citados, foram utilizadas imagens de satélit
 
 Tabela 15: Quadro resumo – Dados de vegetação
 
-![Tabela 15](Figuras_Manual/Tabela_15.PNG)
+![Tabela 15](Figuras_Manual/manual_tabela_15.png)
 
 ## *3.7. Pontos de queimadas*
 
@@ -157,7 +157,7 @@ Para identificar os pontos de ocorrência de queimada na área de estudo foram u
 
 Tabela 16: Quadro resumo – Pontos de Queimadas
 
-![Tabela 16](Figuras_Manual/Tabela_16.PNG)
+![Tabela 16](Figuras_Manual/manual_tabela_16.png)
 
 ------
 

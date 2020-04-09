@@ -8,7 +8,7 @@ Caminho: Estatísticas - Censos - Censo_Demografico_2010 - Resultados_do_Univers
 
 
 
-2. Manter os campos (Domicilio01_PI.xls): 
+2. Manter os campos (Domicilio01_PI.xls):
 
 ●    V001 (quantidade de domicílios);
 
@@ -45,7 +45,7 @@ Caminho: Estatísticas - Censos - Censo_Demografico_2010 - Resultados_do_Univers
 
 ​                    iv.  Energia_P.
 
- 
+
 
  **2. SRTM – 30m (QGIS).**
 
@@ -57,21 +57,21 @@ Caminho: Estatísticas - Censos - Censo_Demografico_2010 - Resultados_do_Univers
 
 4.  As imagens estarão em WGS84. O usuário deverá passar o mosaico para Albers.
 
-5.  Gerar declividade e orientação de encosta através das ferramentas *Slope* (declividade em porcentagem) e *Aspect* (*Spatial Analyst Tools*), respectivamente. 
+5.  Gerar declividade e orientação de encosta através das ferramentas *Slope* (declividade em porcentagem) e *Aspect* (*Spatial Analyst Tools*), respectivamente.
 
- 
+
 
 **3. Landsat – reflectância de superfície (30m) (QGIS)**
 
 1. Baixar as imagens Landsat em reflectância de superfície (https://earthexplorer.usgs.gov/) (*Tabela 18*);
 
- 
+
 
 Tabela 18 – Características do sensor OLI (Operational Land Imager) presente no satélite Landsat 8. Fonte: Embrapa monitoramento por satélite (2013).
 
-![Características do sensor OLI ](Figuras_Manual/Tabela_18.PNG)                               
+![Características do sensor OLI ](Figuras_Manual/manual_tabela_18.png)
 
- 
+
 
 2. Enter Search Criteria – inserir o kml da área, avaliar quais imagens recobre a área (show footprint) e fazer download da opção (order scene) – 220/65; 219/66; 218/66. Foram utilizadas as bandas Azul (*blue*), Verde (*green*), Vermelho (*red*) e Infravermelho Próximo (*NIR*).
 
@@ -81,7 +81,7 @@ Tabela 18 – Características do sensor OLI (Operational Land Imager) presente 
 
 ●    As imagens são solicitadas e demoram algumas horas para serem liberadas.
 
- 
+
 
 3.  Fazer o mosaico das imagens que recobrem a área, por banda, sem alterar qualquer parâmetro. Isso é importante para não alterar os dados;
 
@@ -89,21 +89,21 @@ Tabela 18 – Características do sensor OLI (Operational Land Imager) presente 
 
 5.  Aplicar as equações para gerar **Área Basal, Densidade, Volume, GNDVI, NDVI (30m/Float32)**:
 
- 
+
 
 Para calcular os índices, são utilizadas as bandas do Landsat 8, da seguinte forma:
 
- **GNDVI:** (*Green Normalized DifferenceVegetation Index*) ou índice de vegetação por diferença normalizada verde é um índice variante do NDVI: 
+ **GNDVI:** (*Green Normalized DifferenceVegetation Index*) ou índice de vegetação por diferença normalizada verde é um índice variante do NDVI:
 
-![GNDVI](Figuras_Manual/GNDVI.PNG)   
+![GNDVI](Figuras_Manual/manual_gndvi.png)
 
 Onde, ρNIR e ρGREEN é a reflectância das respectivas bandas do infravermelho próximo e verde respectivamente.
 
- 
+
 
 **NDVI:** (*Normalized Difference Vegetation Index*) ou índice de vegetação por diferença normalizada:
 
-![NDVI](Figuras_Manual/NDVI.PNG) 
+![NDVI](Figuras_Manual/manual_ndvi.png)
 
 Onde, ρNIR e ρRED é reflectânciadas bandas do infravermelho próximo e vermelho respectivamente.
 
@@ -111,33 +111,33 @@ Onde, ρNIR e ρRED é reflectânciadas bandas do infravermelho próximo e verme
 
 Para calcular os parâmetros de vegetação é necessário, antes de aplicar as equações, calcular os seguintes índices:
 
- 
+
 
 **NDWI** (*Normalized Difference Water Index*) ou índice de água por diferença normalizada - índice que realça limites mais distintos para detecção de áreas com presença de água:
 
-![NDWI](Figuras_Manual/NDWI.PNG) 
+![NDWI](Figuras_Manual/manual_ndwi.png)
 
 Onde, ρGREEN e ρNIR é a reflectância das respectivas bandas verde e do infravermelho próximo
 
- 
+
 
 **SAVI** (Soil Adjusted Vegetation Index) ou índice de vegetação ajustado ao solo:
 
-![SAVI](Figuras_Manual/SAVI.PNG) 
+![SAVI](Figuras_Manual/manual_savi.png)
 
 Onde, ρNIR e ρRED é a reflectância das respectivas bandas do infravermelho próximo e vermelho; e L é um fator de ajuste, que neste trabalho foi utilizado o L=0,5.
 
- 
 
-Os valores do NDVI variam de 1 (um) a 0 (zero), sendo mais próximo de 1 quando a planta está no ápice da sua atividade fotossintética e próximo de 0 (zero) nas etapas finais de envelhecimento foliar até a sua abcisão (queda da folha). 
 
- 
+Os valores do NDVI variam de 1 (um) a 0 (zero), sendo mais próximo de 1 quando a planta está no ápice da sua atividade fotossintética e próximo de 0 (zero) nas etapas finais de envelhecimento foliar até a sua abcisão (queda da folha).
+
+
 
 **4. Estradas –** **DNIT.**
 
 1. Baixar o shape file das estradas/rodovias no site do Departamento Nacional de Infraestrutura de Transportes DNIT ( http://www.dnit.gov.br/planejamento-e-pesquisa/dnit-geo - Downloads - SHP);
 
-2.  Esse dado pode ser utilizado como apoio para o mapeamento das estradas/rodovias. Essa vetorização pode ser feita no Google Earth, ou utilizando imagens Landsat ou Sentinel 2 da área de análise. 
+2.  Esse dado pode ser utilizado como apoio para o mapeamento das estradas/rodovias. Essa vetorização pode ser feita no Google Earth, ou utilizando imagens Landsat ou Sentinel 2 da área de análise.
 
 3.  Com o dado mapeado, fazer um buffer de 75m;
 
@@ -147,7 +147,7 @@ Os valores do NDVI variam de 1 (um) a 0 (zero), sendo mais próximo de 1 quando 
 
 6.  Recortar o raster para a área do buffer da LT.
 
- 
+
 
 **5. Variáveis climáticas (InMET)**
 
@@ -155,7 +155,7 @@ Os valores do NDVI variam de 1 (um) a 0 (zero), sendo mais próximo de 1 quando 
 
 2.  Selecionar série histórica – dados mensais (Janeiro a Dezembro do ano anterior);
 
-3.  Selecionar a REGIÃO desejada (N, NE, CO, SE, S); 
+3.  Selecionar a REGIÃO desejada (N, NE, CO, SE, S);
 
 4.  Identificar as subestações na região da área de estudo;
 
@@ -163,11 +163,11 @@ Os valores do NDVI variam de 1 (um) a 0 (zero), sendo mais próximo de 1 quando 
 
 6.  Os dados em .txt deverão ser abertos/salvos em .csv (Figura 29):
 
-![Exemplo de dado de estação meteorológica](Figuras_Manual/Figura_29.PNG)   
+![Exemplo de dado de estação meteorológica](Figuras_Manual/manual_figura_29.png)
 
 Figura 29 – Exemplo de dado de estação meteorológica
 
- 
+
 
 7. Criar um shape de pontos a partir do arquivo CSV;
 
@@ -189,7 +189,7 @@ Figura 29 – Exemplo de dado de estação meteorológica
 
 13. Verificar se o dado final está na projeção Albers.
 
- 
+
 
 **6. Pontos de queimadas (Inpe)**
 
@@ -199,9 +199,9 @@ Figura 29 – Exemplo de dado de estação meteorológica
 4. Reprojetar para Albers;
 
 5. Selecione os pontos que estão dentro da área de análise e descarte os demais (Vetor → Investigar → Selecionar pela localização);
-6. Salvar a nova seleção. 
+6. Salvar a nova seleção.
 
- 
+
 
 **7. Mapeamento de uso do solo e cobertura vegetal**
 
@@ -211,7 +211,7 @@ Figura 29 – Exemplo de dado de estação meteorológica
 
 Tabela 19 – Legenda de uso do solo e cobertura vegetal
 
- ![Tabela 19](Figuras_Manual/Tabela_19.PNG)
+ ![Tabela 19](Figuras_Manual/manual_tabela_19.png)
 
 3. Reprojetar para Albers;
 
