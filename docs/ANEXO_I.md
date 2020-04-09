@@ -69,7 +69,7 @@ Caminho: Estatísticas - Censos - Censo_Demografico_2010 - Resultados_do_Univers
 
 Tabela 18 – Características do sensor OLI (Operational Land Imager) presente no satélite Landsat 8. Fonte: Embrapa monitoramento por satélite (2013).
 
-![Características do sensor OLI ](Figuras_Manual/Tabela_18.png)                               
+![Características do sensor OLI ](Figuras_Manual/Tabela_18.PNG)                               
 
  
 
@@ -95,7 +95,7 @@ Para calcular os índices, são utilizadas as bandas do Landsat 8, da seguinte f
 
  **GNDVI:** (*Green Normalized DifferenceVegetation Index*) ou índice de vegetação por diferença normalizada verde é um índice variante do NDVI: 
 
-![GNDVI](Figuras_Manual/GNDVI.png)   
+![GNDVI](Figuras_Manual/GNDVI.PNG)   
 
 Onde, ρNIR e ρGREEN é a reflectância das respectivas bandas do infravermelho próximo e verde respectivamente.
 
@@ -103,7 +103,7 @@ Onde, ρNIR e ρGREEN é a reflectância das respectivas bandas do infravermelho
 
 **NDVI:** (*Normalized Difference Vegetation Index*) ou índice de vegetação por diferença normalizada:
 
-![NDVI](Figuras_Manual/NDVI.png) 
+![NDVI](Figuras_Manual/NDVI.PNG) 
 
 Onde, ρNIR e ρRED é reflectânciadas bandas do infravermelho próximo e vermelho respectivamente.
 
@@ -115,7 +115,7 @@ Para calcular os parâmetros de vegetação é necessário, antes de aplicar as 
 
 **NDWI** (*Normalized Difference Water Index*) ou índice de água por diferença normalizada - índice que realça limites mais distintos para detecção de áreas com presença de água:
 
- <img src="Figuras_Manual/NDWI.png" alt="NDWI" style="zoom:10%;" /> 
+![NDWI](Figuras_Manual/NDWI.PNG) 
 
 Onde, ρGREEN e ρNIR é a reflectância das respectivas bandas verde e do infravermelho próximo
 
@@ -123,7 +123,7 @@ Onde, ρGREEN e ρNIR é a reflectância das respectivas bandas verde e do infra
 
 **SAVI** (Soil Adjusted Vegetation Index) ou índice de vegetação ajustado ao solo:
 
-<img src="Figuras_Manual/SAVI.png" alt="SAVI" style="zoom:10%;" /> 
+![SAVI](Figuras_Manual/SAVI.PNG) 
 
 Onde, ρNIR e ρRED é a reflectância das respectivas bandas do infravermelho próximo e vermelho; e L é um fator de ajuste, que neste trabalho foi utilizado o L=0,5.
 
@@ -163,7 +163,7 @@ Os valores do NDVI variam de 1 (um) a 0 (zero), sendo mais próximo de 1 quando 
 
 6.  Os dados em .txt deverão ser abertos/salvos em .csv (Figura 29):
 
-![Exemplo de dado de estação meteorológica](Figuras_Manual/Figura_29.png)   
+![Exemplo de dado de estação meteorológica](Figuras_Manual/Figura_29.PNG)   
 
 Figura 29 – Exemplo de dado de estação meteorológica
 
@@ -211,7 +211,7 @@ Figura 29 – Exemplo de dado de estação meteorológica
 
 Tabela 19 – Legenda de uso do solo e cobertura vegetal
 
- ![Tabela 19](Figuras_Manual/Tabela_19.png)
+ ![Tabela 19](Figuras_Manual/Tabela_19.PNG)
 
 3. Reprojetar para Albers;
 

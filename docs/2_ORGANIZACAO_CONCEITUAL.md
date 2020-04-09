@@ -3,7 +3,7 @@
 Para se determinar o arranjo de sistematização dos modelos e criação das ferramentas do CQFS, foi estudada a dinâmica de interação entre os modelos criados para o projeto, isto é, se a saída de um modelo é entrada para outro modelo, a frequência de atualização dos dados de entrada, que, consequentemente, leva à necessidade de execução do modelo e atualização dos dados de saída. Com base nesse estudo, definiu-se o arranjo conceitual final das ferramentas do plugin, conforme mostrado na Figura 1.
 
 
-![Arranjo conceitual para construção do plugin](Figuras_Manual/Figura_1.png)   
+![Arranjo conceitual para construção do plugin](Figuras_Manual/Figura_1.PNG)   
 ​                                   
 
 Figura 1 – Arranjo conceitual para construção do plugin

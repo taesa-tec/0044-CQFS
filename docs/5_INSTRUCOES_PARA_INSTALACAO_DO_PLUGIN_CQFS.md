@@ -8,7 +8,7 @@ Caso o diretório **plugins** não exista, deve-se primeiramente criar esse dire
 
 A Figura 2 mostra como deve ficar a árvore de diretórios para a instalação do plugin CQFS.
 
-![Árvore de diretórios para a instalação do plugin CQFS](Figuras_Manual/Figura_2.png)                                 
+![Árvore de diretórios para a instalação do plugin CQFS](Figuras_Manual/Figura_2.PNG)                                 
 
 Figura 2 – Árvore de diretórios para a instalação do plugin CQFS
 
