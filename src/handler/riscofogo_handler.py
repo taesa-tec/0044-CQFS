@@ -28,7 +28,7 @@ from risco_fogo.validate_attribute_handler import ValidateVectorAttributeHandler
 from .shared.validate_layer_handler import ValidateVectorHandler
 from .shared.validate_output_handler import ValidateOutputHandler
 from .shared.validate_layer_handler import ValidateRasterHandler
-from CQFS.src.constants import PLUGIN_RISCO_FOGO
+from ...src.constants import PLUGIN_RISCO_FOGO
 from .risco_fogo.rasterize_handler import RasterizeHandler
 from .risco_fogo.normalize_handler import NormalizeHandler
 from .risco_fogo.riscofogo_model_handler import RiscoFogoModelHandler
